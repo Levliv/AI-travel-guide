@@ -1,0 +1,26 @@
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "ai-rag"
+version = "0.1.0"
+description = "Rag backend"
+authors = [
+    {name = "Lev Livshits",email = "livshitz.lewa@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.15"
+dependencies = [
+    "fastapi[standard] (>=0.123.5,<0.124.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "faiss-cpu (>=1.13.0,<2.0.0)",
+    "sentence-transformers (>=5.1.2,<6.0.0)",
+    "mistralai (>=1.9.11,<2.0.0)",
+    "datasets (>=4.4.1,<5.0.0)",
+    "aiogram (>=3.22.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
